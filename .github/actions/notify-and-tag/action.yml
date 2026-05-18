@@ -246,11 +246,11 @@ runs:
 
   # ── Step 7: Escribir resumen visual en la UI de GitHub V2 ─────────
   - name: Crear resumen en GitHub
-  shell: bash
-  run: |
-    echo "## 🚀 Release ${{ inputs.version }}" >> $GITHUB_STEP_SUMMARY
-    echo "| Campo | Valor |" >> $GITHUB_STEP_SUMMARY
-    echo "|-------|-------|" >> $GITHUB_STEP_SUMMARY
-    echo "| Versión | \`v${{ inputs.version }}\` |" >> $GITHUB_STEP_SUMMARY
-    echo "| Entorno | ${{ inputs.environment }} |" >> $GITHUB_STEP_SUMMARY
-    echo "| Commit | \`${{ github.sha }}\` |" >> $GITHUB_STEP_SUMMARY
+    shell: bash
+    run: |
+      echo "## 🚀 Release ${{ inputs.version }}" >> $GITHUB_STEP_SUMMARY
+      echo "| Campo | Valor |" >> $GITHUB_STEP_SUMMARY
+      echo "|-------|-------|" >> $GITHUB_STEP_SUMMARY
+      echo "| Versión | \`v${{ inputs.version }}\` |" >> $GITHUB_STEP_SUMMARY
+      echo "| Entorno | ${{ inputs.environment }} |" >> $GITHUB_STEP_SUMMARY
+      echo "| Commit | \`${{ github.sha }}\` |" >> $GITHUB_STEP_SUMMARY
